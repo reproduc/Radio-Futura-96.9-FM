@@ -3,36 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-        <title>Radio Futura 96.9 FM</title>
-        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport"content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover" />
-        <meta name="keywords" content="Radio Futura - Transmite desde Satipo Junin - Peru" />
-        <meta name="description" content="Radio Futura 96.9 FM" />
-        <meta name="theme-color" content="#52e3c5" />
-        <meta name="author" content="By: MI RADIO EN VIVO" />
-        <meta name="copyright" content="Transmite desde Villarica - Peru" />
-        <meta name="geo.country" content="by" />
-        <meta name="geo.placename" content="Radio Futura 96.9 FM" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Transmite las 24 horas del dia - Radio Futura 96.9 FM " />
-        <meta property="og:url" content="#" />
-        <meta property="og:title" content="Radio Futura 96.9 FM" />
-        <meta property="og:description" content="Radio Futura 96.9 FM, Con La Mejor Musica las 24 horas" />
-        <meta property="og:image" content="imagenes/facebook.png" />
-        <meta property="og:image:type" content="imagenes/facebook.png" />
-        <meta property="og:image:width" content="600" />
+    <title>El Muñeco Cibernetico</title>
+    <meta name="theme-color" content="#393939" />
+    <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="360" />
-        <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="imagenes/logo.png" />
-        <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo.png" />
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
     
     <!-- Link to the manifest file -->
     <link rel="manifest" href="manifest.json">
-    
+
     <style>
         /* Estilo para el video */
         video {
@@ -47,17 +34,27 @@
 
         /* Estilo para la imagen de fondo */
         .background-image {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%; 
-            height: 100%; 
-            background-image: url('imagenes/logo.png'); 
-            background-size: cover; 
-            background-position: center; 
-            z-index: -1; 
-            filter: blur(10px); 
-        }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagenes/background.png');
+    background-size: cover;
+
+    z-index: -1;
+    filter: blur(9px);
+    animation: zoomInOut 7s infinite alternate ease-in-out;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
 
         /* Asegura que el body y html ocupen el 100% */
         body, html {
@@ -77,7 +74,7 @@
         }
 
         #installButton {
-            width: 150px; 
+            width: 190px; 
             cursor: pointer; 
             transition: transform 0.2s; 
         }
@@ -131,25 +128,27 @@
         }
 
         .close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 30px;
-            cursor: pointer;
-            z-index: 1000; 
-        }
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 500px;
+    background: #00000070;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
     </style>
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Radio Futura 96.9 FM - Transmite desde Villarica - Peru" />
-    <meta property="og:description" content="Radio Futura 96.9 FM ¡Siempre Contigo!" />
-    <meta property="og:image" content="imagenes/facebook.png" />
+    <meta property="og:title" content="El Muñeco Cibernetico" />
+    <meta property="og:description" content="El Muñeco Cibernetico Recordando Nuestra Musica Autentica Desde Trujillo Perú." />
+    <meta property="og:image" content="imagenes/logo.png" />
     <meta property="og:url" content="#" />
     <meta property="og:type" content="website" />
 </head>
 <body>
     <div class="background-image"></div>
-    <video src="video.mp4" autoplay muted loop></video>
+    <video src="imagenes/background.png" autoplay muted loop></video>
     <table width="100%" border="0" cellpadding="0" cellspacing="0">
         <tr>
             <td valign="top">
@@ -160,11 +159,9 @@
                             <div id="mySidebar" class="sidebar">
                                 <table width="100%" border="0" cellpadding="0" cellspacing="0">
                                     <tr>
-                                        <td><img src="imagenes/logo.png" class="pulse-logo" width="100%" height="auto"></td>
+                                        <td><img src="imagenes/menu.png" class="pulse-logo" width="100%" height="auto"></td>
                                     </tr>
-                                    <tr>
-                                        <td>&nbsp;</td>
-                                    </tr>
+                                 
                                     <tr>
                                         
                                         <td>
@@ -173,7 +170,7 @@
                                                     <td><a href="javascript:void(0);" onclick="closeNav();"><img src="imagenes/inicio.png" width="100%" height="auto" border="0"></a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a href="tel:+51921398126" target="_blank"><img src="imagenes/llamanos.png" width="100%" height="auto" border="0"></a></td>
+                                                    <td><a href="+51901164810" target="_blank"><img src="imagenes/llamanos.png" width="100%" height="auto" border="0"></a></td>
                                                 </tr>
                                             </table>
                                         </td>
@@ -188,19 +185,19 @@
                                                     <td><a href="#" target="_blank"><img src="imagenes/web.png" width="100%" height="auto" border="0"></a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a href="https://www.instagram.com/" target="_blank"><img src="imagenes/instagram.png" width="100%" height="auto" border="0"></a></td>
+                                                    <td><a href="#" target="_blank"><img src="imagenes/instagram.png" width="100%" height="auto" border="0"></a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a href="https://www.tiktok.com/" target="_blank"><img src="imagenes/tiktok.png" width="100%" height="auto" border="0"></a></td>
+                                                    <td><a href="https://www.instagram.com" target="_blank"><img src="imagenes/tiktok.png" width="100%" height="auto" border="0"></a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a href="https://youtube.com/" target="_blank"><img src="imagenes/Youtube.png" width="100%" height="auto" border="0"></a></td>
+                                                    <td><a href="#" target="_blank"><img src="imagenes/Youtube.png" width="100%" height="auto" border="0"></a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a href="https://www.messenger.com/t/" target="_blank"><img src="imagenes/messenger.png" width="100%" height="auto" border="0"></a></td>
+                                                    <td><a href="https://www.messenger.com" target="_blank"><img src="imagenes/messenger.png" width="100%" height="auto" border="0"></a></td>
                                                 </tr>
                                                 <tr></tr>
-                                                    <td><a href="mailto:#" target="_blank"><img src="imagenes/email.png" width="100%" height="auto" border="0"></a></td>
+                                                    <td><a href="xxx" target="_blank"><img src="imagenes/email.png" width="100%" height="auto" border="0"></a></td>
                                                 </tr>
                                             </table>
                                         </td>
@@ -213,10 +210,10 @@
                                             <table width="100%" border="0" cellpadding="0" cellspacing="10">
                                                 <tr>
                                                     <td>
-                                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://reproduc.github.io/Radio-Futura-96.9-FM" target="_blank">
+                                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://cesar42.github.io/cibernetico" target="_blank">
                                                             <img src="imagenes/compartirfacebook.png" class="pulse" width="100%" height="auto">
                                                         </a>                                                         
-                                                        <a href="https://api.whatsapp.com/send?text=¡Hola! Te Invito a escuchar nuestra Emisora https://reproduc.github.io/Radio-Futura-96.9-FM" target="_blank">
+                                                        <a href="https://api.whatsapp.com/send?text=¡Hola! Te Invito a escuchar nuestra Emisora https://cesar42.github.io/cibernetico"_blank">
                                                             <img src="imagenes/compartirwhatsapp.png" class="pulse" width="100%" height="auto">
                                                         </a>                                                                                                              
                                                     </td>
@@ -250,17 +247,24 @@
     </table>
 
     <div class="social-icons">
-         <a href="https://geo.dailymotion.com/player/x14ru6.html?video=k2eC5HQOmJKHuUE1muC" target="_blank">
-            <img src="iconos/tv.png" class="social-icon" alt="Tv">
+        <a href="https://wa.me/+51901164810" target="_blank">
+            <img src="iconos/whatsapp.png" class="social-icon" alt="WhatsApp">
         </a>
-        <a href="https://www.facebook.com/" target="_blank">
+        <a href="https://www.facebook.com" target="_blank">
             <img src="iconos/facebook.png" class="social-icon" alt="Facebook">
         </a>
-        <a href="https://wa.me/51921398126" target="_blank">
-            <img src="iconos/whatsapp.png" class="social-icon" alt="WhatsApp">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="iconos/tiktok.png" class="social-icon" alt="Instagram">
             </a>
    
-        
+        <a href="#" id="chatIcon">
+            <img src="iconos/chat.png" class="social-icon" alt="Chat">
+        </a>
+    </div>  
+
+    <div id="chatModal" class="chat-modal">
+        <span class="close" id="closeChat">&times;</span>
+        <iframe src="https://geo.dailymotion.com/player/x14ru6.html?video=k2eC5HQOmJKHuUE1muC" frameborder="0"></iframe>
     </div>
 
     <script>
@@ -314,7 +318,7 @@
             const sidebar = document.getElementById("mySidebar");
             const button = document.querySelector('.openbtn');
 
-            if (sidebar.style.width === "250px" && !sidebar.contains(event.target) && !button.contains(event.target)) {
+           if (sidebar.style.width === "250px" && !sidebar.contains(event.target) && !button.contains(event.target)) {
                 closeNav();
             }
         });
@@ -325,32 +329,30 @@
                 userinterface: "big",
                 backgroundcolor: "transparent",
                 fontcolor: "#ffffff",
-                hightlightcolor: "#ffffff",
-                fontname: "Unica One",
-	            googlefont: "Unica+One&display=swap",
-	            fontratio: "0.4",
-                radioname: "Radio Futura 96.9 FM",
+                hightlightcolor: "#fde800",
+                fontname: "Poppins",
+	        googlefont: "Poppins&display=swap",
+	        fontratio: "0.4",
+                radioname: "El Muñeco Cibernetico",
                 scroll: "true",
                 coverimage: "imagenes/logo.png",
-                onlycoverimage: "true",
+                onlycoverimage: "false",
                 coverstyle: "",
                 usevisualizer: "real",
-                visualizertype: "3",
+                visualizertype: "6",
                 multicolorvisualizer: "true",
-                color1: "#ffffff",
-                visualizeropacity: "6",
+                color1: "#1e3ad5",
+                visualizeropacity: "3.0",
                 itunestoken: "1000lIPN",
                 metadatatechnic: "creativo-agencia-metadato",
-                ownmetadataurl: "",
+                ownmetadataurl: "true",
                 metadata: "",
                 streamurl: "https://stream-179.zeno.fm/cdb5tue3b8buv?zt=",
                 streamtype: "zeno",
                 idzeno: "cdb5tue3b8buv",
-                shoutcastpath: "/electronic.mp3",
-                metadatainterval: "20000",
-                volume: "100",
+                shoutcastpath: "/stream",
                 debug: "false",
-                usestreamcorsproxy: "false",
+                volume: "100",
                 autoplay: "true",
                 displayliveicon: "true",
                 displayvisualizericon: "true",
@@ -392,11 +394,12 @@
         </script>
     </script>
     <footer style="display:grid;align-content:end">
-        <div style="#3e3e94; color:#ffffff;text-align:center;padding:3px">
-            &copy; Copyright 2026 - App Desarrollado con tecnologia Pwa</a>
+        <div style="#3e3e94; color:#fff;text-align:center;padding:3px">
+            &copy; Diseñado por : MBBM 2026 App Desarrollado con tecnologia Pwa.</a>
         </div>
         <script>
 </body>
 
 
 </html>
+
